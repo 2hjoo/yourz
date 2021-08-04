@@ -1,69 +1,45 @@
+$(window).scroll(function () {
+
+	var Top = $(this).scrollTop();
+	//var header__inner = $(".header__inner");
+	var mainOffset = $( '.news' ).offset();
+
+	// if (Top > 100) {
+	//     $(".etc-btn").addClass('on');
+	//     $(".header.main").addClass('on');
+	// }
+	// if (Top < 100) {
+	//     $(".etc-btn").removeClass('on');
+	//     $(".header.main").removeClass('on');
+	// }
+
+	//document가 mainOffset 값보다 많이 스크롤 되면 실행
+	if ( $( document ).scrollTop() >= mainOffset.top ) {
+		$( '.top-button' ).addClass( 'on' );
+		//$("body").css("padding-top", "50px");
+	}
+	//mainOffset 값 이하로 줄어들면 실행
+	else {
+		$( '.top-button' ).removeClass( 'on' );
+		//$("body").css("padding-top", "0px");
+	}
+
+
+});
 $(function () {
 
-    $('.sitemap button').click(function(){
-        $(this).children('.sitemap-buttonwrap').toggleClass("open");
-        $(".sitemap__inner, .sitemap-menu").toggleClass("open");
-        if($('.sitemap__inner').hasClass('open')){
-            //console.log("a");
-            $('body').css('overflow','hidden');
-        }else{
-            //console.log("b");
-            $('body').css('overflow','auto');
-        }    
-    })
-   
-
-    $("header.on").children(".logo").find("img").attr("src","./inc/resource/image/logo-on.png");
-
-    $(".arrow-top").click(function () {
+    $(".top-button").click(function () {
         $("html, body").animate({
             scrollTop: 0
         }, 300);
     });
-
-    $(".busi-info__more").hide();
-    $(".busi-info button").click(function(){
-        $(this).toggleClass("show");
-        $(".busi-info__more").slideToggle();
-    })
-
-
-    //header
-    $('header').mouseover(function(){
-		$('header').addClass('on')		
-	});
-	$('header').mouseleave(function(){
-		$('header').removeClass('on')
-	});
-	$(".menu__inner > div > div > a").on("mouseover", function(){
-		$(".menu__inner > div >  div > a").removeClass("on");
-		$(".menu__inner > div > div").removeClass("open");
-		$(this).parent().addClass("open");
-		$(this).addClass("on");
-		// headerOpen();
-	});
-	$(".menu__inner > div > div").on("mouseleave", function(){
-		$(".menu__inner > div > div > a").removeClass("on");
-		$(".menu__inner > div > div").removeClass("open");
-	});
-	$(".menu__inner > div > div > a").focus(function(){
-		$(this).parent().addClass("on");
-		// headerOpen();
-		$(this).next().show();
-	});
-	$(".menu__inner > div > div > a").focusout(function(){
-		$(this).parent().removeClass("on");
-	});
-	$("body").on("mouseleave", "header", function(){
-		// headerClose();
-		$(".gnb_hover_bar").removeClass("on");
-	});
-	$("body").on("mouseover", "header .head_top", function(){
-		// headerClose();
-	});
     
 
-})
+});
+
+
+
+
 
 
 
