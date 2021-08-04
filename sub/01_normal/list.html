@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="../../inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../../inc/resource/css/swiper.min.css">
+    <link rel="stylesheet" href="../../inc/resource/css/slick.css">
+
+    <link rel="stylesheet" href="../../inc/resource/css/reset.css">
+    <link rel="stylesheet" href="../../inc/resource/css/font.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/common.css"> -->
+    <link rel="stylesheet" href="../../inc/resource/css/main.css">
+    <link rel="stylesheet" href="../../inc/resource/css/sub.css">
+    <!-- <link rel="stylesheet" href="../../inc/resource/css/test.css"> -->
+
+    <script src="../../inc/resource/js/popper.js"></script>
+    <script src="../../inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../../inc/resource/js/bootstrap.min.js"></script>
+
+    <script src="../../inc/resource/js/swiper.min.js"></script>
+    <script src="../../inc/resource/js/slick.min.js"></script>
+    <script src="../../inc/resource/js/TweenMax.min.js"></script>
+
+    <script src="../../inc/resource/js/common.js"></script>
+    <script src="../../inc/resource/js/main.js"></script>
+
+    <script src="../../inc/resource/js/ie11CustomProperties.js"></script>
+    
+
+
+</head>
+
+
+
+<body>
+    <div class="wrap">
+        <header>
+            
+            <div class="header main">
+                <div class="header__inner ">
+                    
+                    <div class="header-top d-flex align-items-center">
+                        <div class="header__logo d-flex align-items-center ">
+                            <div class="logo">
+                                <a href="javascript:void(0)" class="logo__link">
+                                    <img src="../../inc/resource/image/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search-area d-flex justify-content-center">
+                            <div class="search-area__inner ">
+                                <div class="search-box d-flex align-items-center">
+                                    <input type="text" placeholder="교과서 과목명으로 검색하기">
+                                    <button type="button" class="ml-auto">
+                                        <img src="../../inc/resource/image/icon/icon-search.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="util ml-auto">
+                            <div class="util__inner">
+                                <ul class="d-flex justify-content-end">
+                                    <li><a href="javascript:void(0)">로그인</a></li>
+                                    <li><a href="javascript:void(0)">회원가입</a></li>
+                                    <li><a href="javascript:void(0)">고객센터</a></li>
+                                </ul>
+                                <div class="util-button d-flex ml-auto justify-content-end">
+                                    <button type="button" class="d-flex flex-column align-items-center">
+                                        <img src="../../inc/resource/image/icon/icon-shipping.png" alt="">
+                                        <span>주문/배송조회</span>
+                                    </button>
+                                    <button type="button" class="d-flex flex-column align-items-center">
+                                        <img src="../../inc/resource/image/icon/icon-cart.png" alt="">
+                                        <span>장바구니</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="gnb">
+                        <div class="gnb__inner d-flex justify-content-between">
+                            <div class="sitemap">
+                                <button type="button" class="sitemap-button d-flex flex-column align-items-center justify-content-center">
+                                    <div class="sitemap-buttonwrap">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </button>
+                            </div><!--//sitemap-->
+                            <div class="menu">
+                                <div class="menu__inner">
+                                    <div class="clearfix">
+                                        <div class="nav__item">
+                                            <a class="nav-link" href="javascript:void(0)">일반주문</a>
+                                            <ul class="item__list">
+                                                <li><a href="javascript:void(0)">일반주문</a></li>
+                                                <li><a href="javascript:void(0)">일반주문</a></li>
+                                                <li><a href="javascript:void(0)">일반주문</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav__item">
+                                            <a class="nav-link" href="javascript:void(0)">단체주문</a>
+                                            <ul class="item__list">
+                                                <li><a href="javascript:void(0)">단체주문</a></li>
+                                                <li><a href="javascript:void(0)">단체주문</a></li>
+                                                <li><a href="javascript:void(0)">단체주문</a></li>
+                                                <li><a href="javascript:void(0)">단체주문</a></li>
+                                                <li><a href="javascript:void(0)">단체주문</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav__item">
+                                            <a href="javascript:void(0)" class="nav-link letter_en">북카트</a>
+                                            <ul class="item__list">
+                                                <li><a href="javascript:void(0)">북카트</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav__item">
+                                            <a href="javascript:void(0)" class="nav-link">주문·배송</a>
+                                            <ul class="item__list">
+                                                <li><a href="javascript:void(0)">주문·배송</a></li>
+                                                <li><a href="javascript:void(0)">주문·배송</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav__item">
+                                            <a href="javascript:void(0)" class="nav-link">방문구입</a>
+                                            <ul class="item__list">
+                                                <li><a href="javascript:void(0)">방문구입</a></li>
+                                                <li><a href="javascript:void(0)">방문구입</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="nav__item">
+                                            <a href="javascript:void(0)" class="nav-link">고객센터</a>
+                                            <ul class="item__list">
+                                                <li><a href="javascript:void(0)">고객센터</a></li>
+                                                <li><a href="javascript:void(0)">고객센터</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="right d-flex align-items-center">
+                                고등학교 E-교과서 및 디지털 교과서
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sitemap__inner">
+                    <div class="sitemap__logo">
+                        <button type="button"></button>
+                    </div>
+                    <div class="sitemap-menu">
+                        <h3 class="sub-tit text-center">SITE MAP</h3>
+                        <div class="sitemap-menu__inner">
+                            <ul class="row">
+                                <li>
+                                    <p class="tit">온라인예약</p>
+                                    <a href="/user/reserve/reserveRoomMain.do">객실 예약</a>
+                                    <a href="/user/reserve/reserveConferStep1.do">회의실 예약</a>
+                                    <a href="/user/reserve/reserveFind.do">예약 조회/취소</a>
+                                </li>
+                                <li>
+                                    <p class="tit">시설안내</p>
+                                    <a href="/vr/index.html" target="_blank">연수원 VR 보기</a>
+                                    <a href="/vr/feeGuide_.jsp">전경</a>
+                                    <a href="/vr/feeGuide.jsp">로비</a>
+                                    <a href="/user/guide/roomInfo.do">객실</a>
+                                    <a href="/user/guide/conferenceInfo.do">회의실</a>
+                                    <a href="/user/guide/feeGuide.do">북카페</a>
+                                    <a href="/user/infra/infraGuide.do">부대시설</a>
+                                </li>
+                                <li>
+                                    <p class="tit">관광안내</p>
+                                    <a href="/user/infra/tourGuideY.do">양양 안내</a>
+                                    <a href="/user/infra/tourGuide.do">주변 관광안내</a>
+                                    <a href="/user/intro/contact.do">오시는 길</a>
+                                </li>
+                                <li>
+                                    <p class="tit">고객센터</p>
+                                    <a href="/user/member/memberGuide.do">회원안내</a>
+                                    <a href="/user/center/faq.do">FAQ</a>
+                                    <!-- <a href="/user/center/qna.do">Q&A</a> -->
+                                </li>
+                                <li>
+                                    <p class="tit">참여마당</p>
+                                    <a href="/user/noticeList.do" title="페이지 이동 클릭">공지사항</a>
+                                </li>
+                                <li>
+                                    <p class="tit">연수원 VR</p>
+                                    <a href="/vr/index.html" title="페이지 이동 클릭" target="_vr">연수원 VR</a>
+                                </li>
+                                
+                                <li>
+                                    <p class="tit">멤버쉽</p>
+                                    <a href="/user/auth/loginAuth.do">로그인</a>
+                                    <a href="/user/auth/joinInquiry.do" title="페이지 이동 클릭">회원가입</a>
+                                    <a href="/user/privacy.do">개인정보처리방침</a>
+                                    <a href="/user/noEmailCollect.do">이메일무단수집거부</a>
+                                    <a href="/user/videoEquipmentRule.do">영상정보처리기기운영관리지침</a>
+                                </li>
+                                <li>
+                                    <p class="tit">연수원소개</p>
+                                    <a href="/user/intro/greeting.do">인사말씀</a>
+                                    <a href="/user/intro/floor.do">층별안내</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//gnb-->
+                </div>
+            </div>
+
+            
+        </header>
+
+        <div class="content">
+            <div class="content__inner sub">
+                <h1 class="sub-tit">서브 타이틀</h1>
+                
+
+                
+                
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <div class="footer__inner d-flex">
+                    <div>
+                        <div class="etc-link">
+                            <ul class="d-flex">
+                                <li><a href="javascript:void(0)">회사소개</a></li>
+                                <li><a href="javascript:void(0)">고객의 소리</a></li>
+                                <li><a href="javascript:void(0)">채용안내</a></li>
+                                <li><a href="javascript:void(0)">서비스이용약관</a></li>
+                                <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                                <li><a href="javascript:void(0)">이메일추출방지정책</a></li>
+                                <li><a href="javascript:void(0)">영상정보처리기기운영관리방침</a></li>
+                                <li><a href="javascript:void(0)">윤리경영</a></li>
+                            </ul>
+                        </div>
+                        <div class="info ml-auto mobile">
+                            <p>CUSTOMER CENTER</p>
+                            <span>1588-1588</span>
+                            <dl>
+                                <dt>월-금</dt>
+                                <dd>09 : 00 ~ 18 : 00</dd>
+                            </dl>
+                            <dl>
+                                <dt>점심시간</dt>
+                                <dd>12 : 00 ~ 13 : 00</dd>
+                            </dl>
+                            <dl>
+                                <dt>공휴일/토,일 휴무</dt>
+                                
+                            </dl>
+                        </div>
+                        <div class="logo">
+                            <a href="javascript:void(0)">
+                                <img src="../../inc/resource/image/logo-footer.jpg" alt="">
+                            </a>
+                            <p>본사 : 10881  경기도 파주시 문발로 439-1 (신촌동 734-1)     사단법인 한국검인정교과서협회  대표자 :성삼재   <br>
+                                사업자등록번호 : 109-82-04954        통신판매업신고번호 : 제2014-경기파주-5056호     고객센터 : 031-956-8581~4        상담가능시간 : 평일 09:00~17:30<br>
+                                © 2020 KOREA AUDTHORIZED AND APPROVED TEXTBOOK.,. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div class="info ml-auto pc">
+                        <p>CUSTOMER CENTER</p>
+                        <span>1588-1588</span>
+                        <dl>
+                            <dt>월-금</dt>
+                            <dd>09 : 00 ~ 18 : 00</dd>
+                        </dl>
+                        <dl>
+                            <dt>점심시간</dt>
+                            <dd>12 : 00 ~ 13 : 00</dd>
+                        </dl>
+                        <dl>
+                            <dt>공휴일/토,일 휴무</dt>
+                            
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    
+</script>
+
+</html>

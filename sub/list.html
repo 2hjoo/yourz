@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="../inc/resource/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../inc/resource/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="../inc/resource/css/swiper.min.css">
+
+    <link rel="stylesheet" href="../inc/resource/css/reset.css">
+    <link rel="stylesheet" href="../inc/resource/css/font.css">
+    <link rel="stylesheet" href="../inc/resource/css/common.css">
+    <link rel="stylesheet" href="../inc/resource/css/main.css">
+    <link rel="stylesheet" href="../inc/resource/css/test.css">
+    <link rel="stylesheet" href="../inc/resource/css/sub.css">
+    
+
+    <script src="../inc/resource/js/popper.js"></script>
+    <script src="../inc/resource/js/jquery-1.12.4.min.js"></script>
+    <script src="../inc/resource/js/bootstrap.min.js"></script>
+
+    <script src="../inc/resource/js/swiper.min.js"></script>
+    <script src="../inc/resource/js/TweenMax.min.js"></script>
+
+    <script src="../inc/resource/js/common.js"></script>
+    <script src="../inc/resource/js/sub.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header sub">
+                <div class="header__inner d-flex align-items-center     justify-content-between">
+                    <button type="button" class="btn-back"></button>
+                    <div class="sub-tit d-flex align-items-center mr-auto">
+                        <p>자유여행</p>
+                    </div>
+                    <div class="sitemap">
+                        <div class="sitemap__inner">
+                            <div class="sitemap__logo">
+                                <button type="button"><img src="../inc/resource/image/sitemap__button.png"
+                                        alt=""></button>
+                            </div>
+                            <div class="gnb w-100">
+                                <div class="gnb__inner">
+                                    <div class="">
+                                        <a class="nav-link" href="javascript:void(0)">학술지소개</a>
+                                        <ul class="item__list">
+                                            <li><a href="javascript:void(0)">소개글</a></li>
+                                            <li><a href="javascript:void(0)">편집위원회</a></li>
+                                            <li><a href="javascript:void(0)">발행심사절차</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="">
+                                        <a class="nav-link" href="javascript:void(0)">규정</a>
+                                        <ul class="item__list">
+                                            <li><a href="javascript:void(0)">연구윤리규정</a></li>
+                                            <li><a href="javascript:void(0)">논문투고규정</a></li>
+                                            <li><a href="javascript:void(0)">논문심사규정</a></li>
+                                            <li><a href="javascript:void(0)">편집위원회규정</a></li>
+                                            <li><a href="javascript:void(0)">논문투고방법</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav__item">
+                                        <a href="javascript:void(0)" class="nav-link letter_en">E-Journal</a>
+                                        <ul class="item__list">
+                                            <li><a href="javascript:void(0)">논문검색</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav__item">
+                                        <a href="javascript:void(0)" class="nav-link">교육/양식</a>
+                                        <ul class="item__list">
+                                            <li><a href="javascript:void(0)">연구윤리교육</a></li>
+                                            <li><a href="javascript:void(0)">양식다운</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nav__item">
+                                        <a href="javascript:void(0)" class="nav-link">알림마당</a>
+                                        <ul class="item__list">
+                                            <li><a href="javascript:void(0)">FAQ</a></li>
+                                            <li><a href="javascript:void(0)">알림마당</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//gnb-->
+                        </div>
+                    </div>
+                    <!--//sitemap-->
+
+
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content__inner sub">
+                <div class="select d-flex">
+                    <div class="dropdown">
+                        <button type="button" class="d-flex align-items-center dropdown-toggle-split" data-display="static" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            대륙 선택 <i class="icon arrow-fill__white ml-auto"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">전체</a>
+                          <a class="dropdown-item" href="#">아시아</a>
+                          <a class="dropdown-item" href="#">유럽</a>
+                          <a class="dropdown-item" href="#">일본</a>
+                          <a class="dropdown-item" href="#">아메리카</a>
+                          <a class="dropdown-item" href="#">기타</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button type="button" class="d-flex align-items-center dropdown-toggle-split" data-display="static" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            나라 선택<i class="icon arrow-fill__white ml-auto"></i>
+                        </button>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">전체</a>
+                          <a class="dropdown-item" href="#">베트남</a>
+                          <a class="dropdown-item" href="#">인도네시아</a>
+                          <a class="dropdown-item" href="#">태국</a>
+                          <a class="dropdown-item" href="#">필리핀</a>
+                          <a class="dropdown-item" href="#">말레이시아</a>
+                          <a class="dropdown-item" href="#">싱가폴</a>
+                          <a class="dropdown-item" href="#">중국</a>
+                          <a class="dropdown-item" href="#">타이완</a>
+                          <a class="dropdown-item" href="#">캄보디아</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-list">
+                    <div class="content-list__inner">
+                        <div class="content-tit d-flex align-items-center">
+                            <h3 class="d-flex text-left">전체상품 <span>(30개)</span></h3>
+                            <ul class="ml-auto d-flex">
+                                <li class="selected"><a href="javascript:void(0)">가격순</a></li><!-- 클릭시 selected 클래스 붙습니다. sub.js-->
+                                <li><a href="javascript:void(0)">인기순</a></li>
+                            </ul>
+                        </div>
+                        <!-- 
+                            - 상품 10개 정도를 기본적으로 표출
+                            - 상품 더보기 버튼 클릭 시 10개씩 추가 표출되도록 구성 
+                        -->
+                        <div class="list-item">
+                            <div class="list-item__inner">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" class="d-flex">
+                                            <div class="list-img">
+                                                <img src="../inc/resource/image/list-item__img01.jpg" alt="">
+                                            </div>
+                                            <div class="list-info">
+                                                <p class="list-type">자유여행 78838c</p>
+                                                <p class="list-tit">[2박3일] 베트남 다낭 자유 여행 상품</p>
+                                                <p class="list-rate d-flex align-items-center"><i class="icon star"><img src="../inc/resource/image/icon-star.png" alt=""></i><span>4.9</span>여행후기 241</p>
+                                                <p class="list-price">634,900원~</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="d-flex">
+                                            <div class="list-img">
+                                                <img src="../inc/resource/image/list-item__img01.jpg" alt="">
+                                            </div>
+                                            <div class="list-info">
+                                                <p class="list-type">자유여행 78838c</p>
+                                                <p class="list-tit">[2박3일] 베트남 다낭 자유 여행 상품</p>
+                                                <p class="list-rate d-flex align-items-center"><i class="icon star"><img src="../inc/resource/image/icon-star.png" alt=""></i><span>4.9</span>여행후기 241</p>
+                                                <p class="list-price">634,900원~</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="d-flex">
+                                            <div class="list-img">
+                                                <img src="../inc/resource/image/list-item__img01.jpg" alt="">
+                                            </div>
+                                            <div class="list-info">
+                                                <p class="list-type">자유여행 78838c</p>
+                                                <p class="list-tit">[2박3일] 베트남 다낭 자유 여행 상품</p>
+                                                <p class="list-rate d-flex align-items-center"><i class="icon star"><img src="../inc/resource/image/icon-star.png" alt=""></i><span>4.9</span>여행후기 241</p>
+                                                <p class="list-price">634,900원~</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <div class="button-more text-center">
+                                <button type="button" class="d-flex w-100 justify-content-center align-items-center">상품 더보기 <sup>(1/3)</sup> <img src="../inc/resource/image/arrow-more.png" alt="" style="width:2.7rem"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-area__inner d-flex">
+                <div class="button-wrap">
+                    <button type="button" class="button__icon-heart"><img src="../inc/resource/image/icon-heart.png" alt=""></button>
+                </div>
+                <div class="button-wrap">
+                    <button type="button" class="button__icon-home bg-gradient"><i class="icon home"></i></button>
+                </div>    
+                <div class="button-wrap">
+                    <button type="button" class="button__icon-user"><img src="../inc/resource/image/icon-user.png" alt=""></button>
+                </div>    
+            </div>
+        </div>
+        
+        <!-- <div class="etc-btn">
+            <div class="etc-btn__inner d-flex justify-content-between">
+                <button type="button" class="icon arrow-back"></button>
+                <button type="button" class="arrow-top"><i class="icon arrow-top"></i>TOP</button>
+            </div>
+        </div> -->
+        <!-- <footer>
+            <div class="footer">
+                <div class="footer__inner">
+                    <div class="private d-flex justify-content-center">
+                        <p><a href="javascript:void(0)">개인정보처리방침</a></p>
+                        <p><a href="javascript:void(0)">이용약관</a></p>
+                        <p><a href="javascript:void(0)">여행약관</a></p>
+                    </div>
+                    <p class="tel">Tel. 02-2052-3335</p>
+                    <div class="busi-info d-flex justify-content-center align-items-center flex-column">
+                        <button type="button" class="d-flex justify-content-center align-items-center"><span>㈜플라이투어
+                            </span>사업자 정보<img src="../inc/resource/image/icon__more.png" alt=""></button>
+                        <div class="busi-info__more">
+                            <p>사업자등록번호 : 279-81-00283 <br>
+                                법인등록번호 : 110111-5906263<br>
+                                통신판매업신고 : 제2018-서울강남-00970호</p>
+                        </div>
+                    </div>
+                    <div class="busi-copy">
+                        <p>(06139)서울시 강남구 언주로 93길 32-8 예랑빌딩 2층
+                            <span>©Design Travel Corporation. All Rights Reserved.</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+
+</body>
+<script>
+
+</script>
+
+</html>
